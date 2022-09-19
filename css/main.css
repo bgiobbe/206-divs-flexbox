@@ -98,34 +98,62 @@ textarea {
 
 html {
   background-color: #222222;
+  color: white;
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
   font-size: 1.25em;
+  padding: 2em;
   height: 100%;
 }
 
+header,
+main, 
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    font-family: Lora, serif;
+    font-size: 2.7em;
+}
+
+main {
+    border-bottom: 1px solid white;
+    font-size: 1.3em;
+}
+
+main span {
+    font-family: Lora, serif;
+}
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  justify-content: space-between;
-  font-weight: 400;
+    /*add display:flex and set justify-content to space-between*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 10px 0;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  height: auto;
-  width: 30%;
-  padding: 1em;
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1em;
+    height: auto;
+    width: 30%;
+    margin: 1em 0;
+    padding: 0 1em;
 }
 
 .div-2 {
@@ -139,6 +167,34 @@ body {
     font-weight: 700;
 }
 
+footer {
+    border-top: 1px solid white;
+}
+
+footer div {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 5px;
+    height: 24px;
+    width: 24px;
+}
+
+footer div.twitter {
+    background-color: white;
+    background-image: url('../img/twitter.png');
+}
+
+footer div.linkedin {
+    background-color: white;
+    background-image: url('../img/linkedin.png');
+}
+
+footer div.github {
+    background-image: url('../img/github.png');
+}
 
 
 /* ==========================================================================
